@@ -6,10 +6,10 @@ public class LockOnTarget : MonoBehaviour
 
     private void Update()
     {
-        //mouse
+        // Mouse
         Vector3 direction = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y,
         10)) - transform.position;
-        //target
+        // Target
         //Vector3 direction = target.position - transform.position;
         Debug.DrawRay(transform.position, direction, Color.red);
 
@@ -21,3 +21,6 @@ public class LockOnTarget : MonoBehaviour
         //transform.rotation = Quaternion.Slerp(transform.rotation, angleAxis, Time.deltaTime * 50);
     }
 }
+
+
+
